@@ -13,7 +13,7 @@ import { faTimes, faEdit } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-moment',
-  templateUrl: './Moment.component.html',
+  templateUrl: './moment.component.html',
   styleUrls: ['./moment.component.css']
 })
 export class MomentComponent implements OnInit {

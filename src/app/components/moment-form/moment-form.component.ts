@@ -3,14 +3,16 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Moment } from '../../Moment';
 @Component({
   selector: 'app-moment-form',
-  templateUrl: './Moment-form.component.html',
+  templateUrl: './moment-form.component.html',
   styleUrls: ['./moment-form.component.css']
 })
 export class MomentFormComponent implements OnInit {
   @Output() onSubmit = new EventEmitter<Moment>()
   @Input() btnText!: string;
+  @Input() momentData: Moment | null = null;
 
   momentForm!: FormGroup
+
 
   constructor() { }
 
